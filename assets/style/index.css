@@ -34,7 +34,7 @@ section {
     margin-top: 60px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     border-radius: 14px;
-    background: #fff;
+    background: linear-gradient(#7676ff, pink, #ffff89);
 }
 
 i {
@@ -63,7 +63,7 @@ i {
 .result {
     text-align: center;
     font-size: 30px;
-    color: #7d2ae8;
+    color: #9a009a;
     margin-top: 25px ;
 }
   
