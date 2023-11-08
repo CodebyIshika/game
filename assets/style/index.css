@@ -1,0 +1,136 @@
+@charset "utf-8";
+ 
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border-style: none;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+ 
+body {
+  font-family: 'Nunito sans', 'Open sans', Arial, sans-serif;
+  color: #000;
+  background-color: #D5B6FC;
+}
+ 
+.container {
+  width: min(100% - 30px, 1080px);
+  margin-inline: auto;
+}
+
+h1 {
+   text-align: center;
+   margin-top: 60px;
+   letter-spacing: 0.3px;
+}
+
+section {
+    height: 350px;
+    display: grid;
+    place-items: center;
+    vertical-align: center;
+    margin-top: 60px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 14px;
+    background: #fff;
+}
+
+i {
+    color: #000;
+    font-size: 50px;
+}
+
+.result_images {
+    display: flex;
+    column-gap: 120px;
+}
+
+.result_images i {
+    font-size: 100px;
+    margin-top: 20px;
+}
+
+.container.start .user_result i {
+    transform-origin: left;
+    animation: userShake 0.7s ease infinite;
+}
+
+@keyframes userShake {
+    50% {
+        transform: rotate(10deg);
+    }
+}
+
+.container.start .computer_result i {
+    transform-origin: right;
+    animation: cpuShake 0.7s ease infinite;
+}
+
+@keyframes cpuShake {
+    50% {
+        transform: rotate(-10deg);
+    }
+}
+
+.user_result i {
+    transform: rotate(90deg);
+}
+
+.computer_result i {
+    transform: rotate(-90deg) rotateY(180deg);
+}
+
+.result {
+    text-align: center;
+    font-size: 30px;
+    color: #7d2ae8;
+    margin-top: 25px ;
+}
+  
+.option_image i {
+    font-size: 60px;
+}
+
+.option_images {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    justify-content: space-between;
+    gap: 150px;
+}
+
+
+.container.start .option_images {
+    pointer-events: none;
+}
+
+.option_image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.option_image:hover {
+    opacity: 1;
+}
+  
+.option_image.active {
+    opacity: 1;
+}
+
+.option_image i {
+    pointer-events: none;
+}
+
+.option_image p {
+    color: #7d2ae8;
+    font-size: 20px;
+    margin-top: 16px;
+    pointer-events: none;
+}
+
