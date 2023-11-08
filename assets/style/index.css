@@ -51,29 +51,7 @@ i {
     font-size: 100px;
     margin-top: 20px;
 }
-
-.container.start .user_result i {
-    transform-origin: left;
-    animation: userShake 0.7s ease infinite;
-}
-
-@keyframes userShake {
-    50% {
-        transform: rotate(10deg);
-    }
-}
-
-.container.start .computer_result i {
-    transform-origin: right;
-    animation: cpuShake 0.7s ease infinite;
-}
-
-@keyframes cpuShake {
-    50% {
-        transform: rotate(-10deg);
-    }
-}
-
+  
 .user_result i {
     transform: rotate(90deg);
 }
