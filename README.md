@@ -5,6 +5,7 @@ Welcome to the Rock-Paper-Scissor game. This fun and interactive game allows you
 I have developed this game using HTML, CSS and JavasScript.In this game, user have to choose among rock, paper and scissor to start his competition with the computer.
 In this interactive web-based game, you'll face off against the computer, making choices between "Rock," "Paper," or "Scissors." 
 Here is the screenshot of the game.
+![Game](rock-paper-scissor.jpg)
 
 ## Steps
  - ### Create Folders
