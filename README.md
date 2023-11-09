@@ -57,7 +57,7 @@ Here is the screenshot of the game.
        The JavaScript file is the heart of the Rock-Paper-Scissors game. It's responsible for managing user interactions, generating computer choices, calculating game results,
         and creating an engaging gaming experience. Here are the some of the important codes of the javascript :
        ```javascript
-       / Utility functions
+       / I have used utility functions for my game
            function onEvent(event, selector, callback) {
            return selector.addEventListener(event, callback);
            }
@@ -74,7 +74,8 @@ Here is the screenshot of the game.
          const computerResult = select(".computer_result i");
          const result = select(".result");
          const optionImages = selectAll(".option_image");
-
+       
+         // using this function computer randomly will choose between rock, paper and scissor
          function getRandomOption(gameOptions) {
          return gameOptions[Math.floor(Math.random() * gameOptions.length)];
           }
@@ -83,6 +84,7 @@ Here is the screenshot of the game.
          resultElement.className = `far ${choice.icon}`;
          }
 
+        // this function is used to display the result of the game by following the rules of this game
         function displayResult(resultElement, userChoice, computerChoice) {
          if (userChoice.name === computerChoice.name) {
         resultElement.textContent = "It's a tie!";
