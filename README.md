@@ -127,4 +127,4 @@ Here is the screenshot of the game.
        ```
 
 ## Game
- You can enjoy this game here
+ You can enjoy this game [here]( https://codebyishika.github.io/game/)
